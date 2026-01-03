@@ -10,7 +10,7 @@
 
 | session_id | session_start | session_end | topics | contributors |
 |------------|---------------|-------------|--------|--------------|
-| 1 | 2024-12-24 | 2024-12-25 | Constitutional Framework, License Creation, Anarchism Philosophy, Documentation System | 1, 2 |
+| 1 | 2024-12-24 | 2024-12-29 | Constitutional Framework, License Creation, Anarchism Philosophy, Documentation System | 1, 2 |
 | 2 | 2024-12-25 | ongoing | GitHub Structure, Database Design, Documentation | 1, 2 |
 
 ---
@@ -45,7 +45,6 @@
 - `docs/constitution/constitution-v0.2.md`
 - `docs/license/weltentwicklung-license-v0.1.md`
 - `development-logs/session-001/SESSION-1-RAW.txt`
-- `development-logs/session-001/SESSION-1-METADATA.yaml`
 
 **Session 2:**
 - `README.md` (updated)
