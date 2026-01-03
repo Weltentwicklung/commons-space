@@ -1,0 +1,172 @@
+# Session 1 Metadata
+# commons-space Foundation Phase
+# File: development-logs/session-1/SESSION-1-METADATA.yaml
+
+session_id: 1
+title: "Foundation & Constitutional Framework"
+
+# Session Information
+date_start: 2024-12-24
+date_end: 2024-12-29
+duration: null  # Asynchronous session, no fixed duration
+location: "Remote"
+media_type: "text"
+language: "en/de"  # Mixed English and German
+
+# Participants
+contributors:
+  - 1  # Stefan Hubschmid (Contributor-1)
+  - 2  # Claude.ai/Anthropic (Contributor-2)
+
+# Topics Covered
+topics:
+  - "Constitutional Framework"
+  - "Philosophical Foundation"
+  - "License Creation"
+  - "Project Naming (commons-space)"
+  - "Documentation System Design"
+  - "Anarchism as Edge State"
+  - "GKW as Fallback Mechanism"
+  - "Anti-Institutionalization Design"
+  - "GitHub Repository Structure"
+  - "Contributor ID System"
+  - "Subsidiarity vs Decisions by Concerned"
+  - "Group Types and Restrictions"
+  - "Voting Process Design"
+  - "Database Normalization Planning"
+
+# Documents Created
+documents_created:
+  - path: "docs/constitution/constitution_v0.1.md"
+    description: "Initial constitutional framework"
+    status: "uploaded"
+    
+  - path: "contributions_v0.2.md"
+    description: "Contributor system philosophy and explanation"
+    status: "uploaded"
+    
+  - path: "contributors_v0.1.md"
+    description: "Contributor tracking table"
+    status: "uploaded"
+    
+  - path: "persons_v0.1.md"
+    description: "Person details table"
+    status: "uploaded"
+    
+  - path: "entities_v0.1.md"
+    description: "Entity details table (AI, bots)"
+    status: "uploaded"
+    
+  - path: "sessions_v0.1.md"
+    description: "Session tracking table"
+    status: "uploaded"
+    
+  - path: "development-logs/session-1/SESSION-1-RAW.txt"
+    description: "Complete raw transcript of session"
+    status: "uploaded"
+
+# Documents Discussed But Not Yet Created
+documents_pending:
+  - path: "docs/license/weltentwicklung-license-v0.1.md"
+    description: "Weltentwicklung License (commons-based licensing)"
+    status: "discussed, not finalized"
+    
+  - path: "README.md"
+    description: "Root repository README"
+    status: "needs update with project overview"
+    
+  - path: "TODO.md"
+    description: "Future development tasks"
+    status: "discussed, needs upload"
+
+# Key Decisions Made
+key_decisions:
+  - decision: "Project named 'commons-space'"
+    rationale: "Holistic, non-prescriptive, works across all evolutionary states"
+    
+  - decision: "Constitution v0.1 established"
+    rationale: "Foundation document with core principles"
+    
+  - decision: "Two-tier documentation system"
+    rationale: "Raw transcripts for transparency, protocols for usability"
+    
+  - decision: "Simple integer Contributor IDs (1, 2, 3...)"
+    rationale: "Clean database design, infinite scalability, prevents personality cult"
+    
+  - decision: "SESSION-[ID] naming without contributor names"
+    rationale: "Avoids hierarchy suggestion, collaborative sessions"
+    
+  - decision: "Always include version numbers in filenames"
+    rationale: "No renaming needed, easy archiving, clear history"
+    
+  - decision: "Organizations NOT entities - all persons visible"
+    rationale: "Full transparency, no hiding behind organizational identity"
+    
+  - decision: "Archive pattern for versioning"
+    rationale: "Clean main folders, old versions in /archive subdirectories"
+
+# Major Insights
+insights:
+  - "Anarchism is an 'edge state' not an 'endpoint'"
+  - "GKW serves as fallback mechanism to prevent system collapse"
+  - "Platform is tool for human development, not prescriptive system"
+  - "Subsidiarity ≠ Decisions by Concerned (distinct principles)"
+  - "Hidden groups allowed for safety but cannot coordinate community resources"
+  - "Temporary structures dissolve after crisis (prevent institutionalization)"
+  - "Psychopaths as objective judges during emotional crises (neurodiversity as resource)"
+  - "Platform must never enable livelihood-building or reputation (prevents conflicting interests)"
+
+# Technical Decisions
+technical:
+  - "Database normalization: persons/entities/contributors/sessions separate tables"
+  - "One person = one contributor_id (one-to-one)"
+  - "One entity = multiple contributor_ids (one-to-many)"
+  - "YAML metadata files for machine readability"
+  - "Markdown protocols for human readability"
+  - "Git for version control, /archive for easy access to old versions"
+
+# Open Questions
+open_questions:
+  - "Technology stack (C++ vs community-friendly alternatives)"
+  - "Entity-Relationship Diagram (detailed database design)"
+  - "Weltentwicklung License finalization"
+  - "Legal entity formation (Verein structure)"
+
+# Next Session Topics
+next_session:
+  - "License refinement and finalization"
+  - "Technical architecture decisions"
+  - "Database schema design"
+  - "README.md creation"
+  - "Missing documentation completion"
+
+# Session Status
+status: "complete"
+protocol_status: "pending"
+raw_transcript_status: "uploaded"
+
+# Session Statistics
+word_count: ~50000  # Approximate
+line_count: 2061
+documents_created_count: 7
+documents_uploaded_count: 7
+session_duration_days: 5
+
+# Notes
+notes: |
+  This session established the complete philosophical and organizational 
+  foundation for commons-space. It represents the transition from initial 
+  concept to concrete constitutional framework and documentation system.
+  
+  The session was conducted asynchronously over 5 days between a human 
+  contributor (Stefan) and an AI assistant (Claude), with full transparency 
+  about the AI's role in co-creation.
+  
+  All major architectural decisions for the project were made during this 
+  session, including the anti-personality-cult contributor system and the 
+  two-tier documentation approach.
+
+# Links
+github_repo: "https://github.com/Weltentwicklung/commons-space"
+session_folder: "https://github.com/Weltentwicklung/commons-space/tree/main/development-logs/session-1"
+raw_transcript: "https://github.com/Weltentwicklung/commons-space/blob/main/development-logs/session-1/SESSION-1-RAW.txt"
