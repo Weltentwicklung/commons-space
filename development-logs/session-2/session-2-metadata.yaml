@@ -1,0 +1,190 @@
+# Session 2 Metadata
+# commons-space GitHub Setup & Documentation Completion
+# File: development-logs/session-2/session-2-metadata.yaml
+
+session_id: 2
+title: "GitHub Setup, Documentation Completion & File Organization"
+
+# Session Information
+date_start: 2024-12-30
+date_end: 2025-01-03
+duration: null  # Asynchronous session
+location: "Remote"
+media_type: "text"
+language: "en"
+
+# Participants
+contributors:
+  - 1  # Stefan Hubschmid
+  - 2  # Claude.ai/Anthropic
+
+# Topics Covered
+topics:
+  - "GitHub Repository Setup"
+  - "Session 1 Documentation Completion"
+  - "File Versioning Strategy"
+  - "Folder Organization & Restructuring"
+  - "Database Normalization Refinement"
+  - "Naming Conventions Standardization"
+  - "Commit Message Best Practices"
+  - "Git Workflow Troubleshooting"
+  - "Persons vs Entities Distinction"
+  - "Organizational Transparency Rules"
+
+# Documents Created
+documents_created:
+  - path: "development-logs/session-1/session-1-metadata.yaml"
+    description: "Machine-readable metadata for Session 1"
+    status: "created"
+    
+  - path: "development-logs/session-1/session-1-protocol.md"
+    description: "Structured protocol summary for Session 1"
+    status: "created"
+    
+  - path: "VERSIONING-STRATEGY.md"
+    description: "Comprehensive versioning approach documentation"
+    status: "created, not uploaded"
+    
+  - path: "GITHUB-STRUCTURE.md"
+    description: "Current and recommended repository structure"
+    status: "created, not uploaded"
+    
+  - path: "COMMIT-MESSAGE-OPTIONS.md"
+    description: "Git commit message examples and best practices"
+    status: "created, not uploaded"
+    
+  - path: "FOLDER-REORGANIZATION-PLAN.md"
+    description: "Plan for restructuring repository folders"
+    status: "created, not uploaded"
+
+# Documents Refined/Updated
+documents_updated:
+  - path: "database/contributors_v0.1.md"
+    changes: "Added person_id/entity_id references, normalized structure"
+    
+  - path: "database/persons_v0.1.md"
+    changes: "Created with one-to-one relationship to contributors"
+    
+  - path: "database/entities_v0.1.md"
+    changes: "Simplified to AI/Bot only, removed organizations"
+    
+  - path: "TODO.md"
+    changes: "Added organizational participation system tasks"
+
+# Key Decisions Made
+key_decisions:
+  - decision: "Always use version numbers in filenames"
+    rationale: "No renaming needed when creating new versions, clearer history, easier archiving"
+    
+  - decision: "Use lowercase for all filenames"
+    rationale: "Single consistent naming strategy, Unix-friendly"
+    
+  - decision: "Contributor IDs without 'Contributor-' prefix in most contexts"
+    rationale: "Matches database value, less redundant, clearer"
+    
+  - decision: "Organizations NOT entities - must show all individual contributors"
+    rationale: "Full transparency, prevents hiding behind organizational identity"
+    
+  - decision: "One person = one contributor_id (strict one-to-one)"
+    rationale: "Clarity, prevents confusion through multiple identities"
+    
+  - decision: "One entity = multiple contributor_ids (one-to-many)"
+    rationale: "AI can be used by different persons in different contexts"
+    
+  - decision: "Separate YAML metadata + Protocol for each session"
+    rationale: "YAML for machines, Protocol for humans, both serve different purposes"
+    
+  - decision: "Reorganize into /database/ and /docs/guides/ folders"
+    rationale: "Clean main folder, logical separation of data vs documentation"
+
+# Major Insights
+insights:
+  - "Version numbers in filenames eliminate renaming workflow"
+  - "Organizations as entities would enable hiding contributors - violates transparency"
+  - "Metadata serves machines (automation), protocols serve humans (understanding)"
+  - "Simple naming (lowercase, no prefixes) reduces cognitive load"
+  - "Git relative paths simpler than full paths"
+  - "Archive pattern keeps main folders clean while preserving history"
+
+# Technical Decisions
+technical:
+  - "Git workflow: commit -F for message files, relative paths"
+  - "Branch standardization: main (not master)"
+  - "Archive pattern: /archive/ subfolders in each directory"
+  - "README.md in each folder points to current version"
+  - "Database files in /database/ (temporary until SQL migration)"
+  - "Documentation in /docs/guides/ (friendly, extensible)"
+
+# Naming Conventions Established
+conventions:
+  filenames: "lowercase-with-hyphens_v0.1.md"
+  contributors: "Just number (1, 2, 3) unless context unclear"
+  folders: "lowercase, descriptive (/database/, /docs/guides/)"
+  sessions: "session-[id]-[type].txt/md/yaml"
+
+# GitHub Setup
+github_setup:
+  repository: "https://github.com/Weltentwicklung/commons-space"
+  initial_commit: "a5934e3"
+  files_uploaded: 8
+  lines_added: 3022
+  branch: "main"
+  
+# Challenges Resolved
+challenges:
+  - issue: "Git commit -F pathspec error"
+    solution: "Use relative path with quotes for spaces in filename"
+    
+  - issue: "Push rejected (remote contains work)"
+    solution: "Pull with --allow-unrelated-histories, then push"
+    
+  - issue: "Session 1 protocol needed GitHub URLs"
+    solution: "Created protocol after repository was live"
+    
+  - issue: "Main folder getting cluttered"
+    solution: "Planned reorganization into /database/ and /docs/guides/"
+
+# Open Questions
+open_questions:
+  - "Execute folder reorganization in Session 3?"
+  - "Finalize Weltentwicklung License text"
+  - "Create comprehensive README.md"
+  - "Database ER diagram design"
+
+# Next Session Topics
+next_session:
+  - "Weltentwicklung License finalization"
+  - "Database schema detailed design"
+  - "README.md comprehensive creation"
+  - "Possible folder reorganization execution"
+
+# Session Status
+status: "complete"
+raw_transcript_status: "created"
+protocol_status: "created"
+metadata_status: "created"
+
+# Session Statistics
+word_count: ~15000  # Approximate
+conversation_turns: ~40
+documents_created_count: 6
+documents_updated_count: 4
+git_commits: 1
+github_links_added: 15+
+
+# Notes
+notes: |
+  Session 2 focused on completing Session 1 documentation and establishing
+  the GitHub repository. Major refinements to database structure (persons
+  vs entities distinction) and file organization principles.
+  
+  Key achievement: Establishing clear, simple naming conventions and 
+  versioning strategy that eliminates renaming workflows.
+  
+  Transparency reinforcement: Organizations cannot hide contributors -
+  all team members must be visible as individual persons.
+
+# Links
+github_repo: "https://github.com/Weltentwicklung/commons-space"
+session_folder: "https://github.com/Weltentwicklung/commons-space/tree/main/development-logs/session-2"
+session_1_protocol: "https://github.com/Weltentwicklung/commons-space/blob/main/development-logs/session-1/session-1-protocol.md"
